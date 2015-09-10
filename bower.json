@@ -1,0 +1,19 @@
+{
+  "name": "Student-Loan-Aggregator",
+  "version": "0.0.0",
+  "authors": [
+    "Chris <cpa.staton@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4"
+  }
+}
