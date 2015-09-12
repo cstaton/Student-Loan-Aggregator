@@ -1,6 +1,9 @@
 var Schools = Backbone.Collection.extend({
+
 	model: SchoolModel,
-	urlRoot: "/schools",
+
+	url: "/schools",
+	
 	initialize: function() {
 		this.fetch({
 			success: function(data) {

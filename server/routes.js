@@ -10,4 +10,7 @@ var router = require('express').Router();
 router.route("/schools")
 	.get(controllers.schools.get);
 
+router.route("/loans")
+	.get(controllers.loans.get);
+
 module.exports = router;

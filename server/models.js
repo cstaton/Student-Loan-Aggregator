@@ -11,6 +11,15 @@ module.exports = {
 			});
 		}
 	},
+	loans: {
+		get: function(callback) {
+			var queryStr = "select * from allloans;";
+
+			db.query(queryStr, function(err, results) {
+				callback(err, results);
+			});
+		}
+	},
 	dataInserter: function() {
 		rawD.theParser(function(data) {
 			for (var key in data) {
