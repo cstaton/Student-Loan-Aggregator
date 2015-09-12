@@ -1,5 +1,4 @@
 var mysql = require('mysql');
-var rawD = require('./rawData');
 
 var connection = mysql.createConnection({
 	host: 'localhost',
@@ -18,5 +17,5 @@ connection.connect(function(err) {
 });
 
 
-
+module.exports = connection;
 

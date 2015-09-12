@@ -6,12 +6,40 @@
 		<link href="style/style.css" rel="stylesheet" />
 	</head>
 	<body>
-		<h1>Test Page</h1>
 		<script src="lib/jquery/dist/jquery.min.js"></script>
 		<script src="lib/underscore/underscore.js"></script>
 		<script src="lib/backbone/backbone.js"></script>
 
-		<script src="betterData.js"></script>
-		<script src="converter.js"></script>
+		<script src="models/AppModel.js"></script>
+		<script src="models/HeaderModel.js"></script>
+		<script src="models/SchoolModel.js"></script>
+		<script src="models/LoanModel.js"></script>
+
+		<script src="views/AppView.js"></script>
+		<script src="views/HeaderView.js"></script>
+		<script src="views/SchoolView.js"></script>
+		<script src="views/LoanView.js"></script>
+
+		<!-- <button>Get me some data</button> -->
+
+		<script>
+			$(function() {
+				var appView = new AppView({model: new AppModel()});
+
+				$('body').append(appView.render());
+
+				// $('button').on("click", function() {
+				// 	$.ajax({
+				// 		url: "/schools",
+				// 		success: function(data) {
+				// 			console.log(data);
+				// 		},
+				// 		error: function(err) {
+				// 			console.log(err);
+				// 		}
+				// 	});
+				// });
+			});
+		</script>
 	</body>
 </html>

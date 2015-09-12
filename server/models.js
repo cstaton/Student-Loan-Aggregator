@@ -9,6 +9,7 @@ module.exports = {
 			db.query(queryStr, function(err, results) {
 				callback(err, results);
 			});
+		}
 	},
 	dataInserter: function() {
 		rawD.theParser(function(data) {

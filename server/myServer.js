@@ -1,16 +1,19 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var morgan = require("morgan")
+var morgan = require("morgan");
+
+var router = require('./routes');
 
 var app = express();
 
-var db = require("./controllers");
-var router = require("./routes.js");
+app.use(bodyParser.json());
+app.use(morgan('dev'));
+
+app.use("/", router);
+
 
 app.set("port", (process.env.PORT || 3030));
 
-app.use(bodyParser.json());
-app.use(morgan('dev'));
 
 app.use(express.static(__dirname + "/../client"));
 
