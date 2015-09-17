@@ -13,4 +13,7 @@ router.route("/schools")
 router.route("/loans")
 	.get(controllers.loans.get);
 
+router.route("/states")
+	.get(controllers.states.get);
+
 module.exports = router;

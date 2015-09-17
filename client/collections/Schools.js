@@ -5,6 +5,10 @@ var Schools = Backbone.Collection.extend({
 	url: "/schools",
 	
 	initialize: function() {
+		var context = this;
+
+
+
 		this.fetch({
 			success: function(data) {
 				console.log(data);
