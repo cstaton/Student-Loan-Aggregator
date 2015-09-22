@@ -6,4 +6,4 @@ var LoanView = Backbone.View.extend({
 	render: function() {
 		return this.$el.html("<p>Loans Go here</p>");
 	}
-})
+});

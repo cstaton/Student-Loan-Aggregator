@@ -99,14 +99,14 @@ var SchoolView = Backbone.View.extend({
 			var test = item.get("name").trim();
 
 			if (school === test) {
-				console.log(item.get("schoolid"));
+
 			}
 		});
 
 		this.render();
 		this.autoblah();
 	},
-
+	/*jshint multistr: true */
 	render: function() {
 		return this.$el.html(
 			'<form id="the-basics">\

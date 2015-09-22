@@ -54,7 +54,7 @@ var StateView = Backbone.View.extend({
 				.attr("id", "states-borders")
 				.attr("d", path);
 		});
-
+		/*jshint multistr: true */
 		var clicked = function(d) {
 			var state = $(this).attr("state");
 
@@ -91,4 +91,4 @@ var StateView = Backbone.View.extend({
 	render: function() {
 		return this.$el.html("<h2>State View</h2><div class='results'></div>");
 	}
-})
+});
