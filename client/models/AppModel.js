@@ -3,8 +3,8 @@ var AppModel = Backbone.Model.extend({
 		//collections
 		this.set("school", new Schools());
 		this.set("state", new States());
-		//models
-		this.set("loan", new LoanModel());
+		this.set("loan", new Loans());
+    //models
 		this.set("header", new HeaderModel());
 	}
 });

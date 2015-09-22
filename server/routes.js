@@ -11,7 +11,7 @@ router.route("/schools")
 	.get(controllers.schools.get);
 
 router.route("/loans")
-	.get(controllers.loans.get);
+	.post(controllers.loans.post);
 
 router.route("/states")
 	.get(controllers.states.get);

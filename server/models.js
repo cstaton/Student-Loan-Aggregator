@@ -1,5 +1,5 @@
 var rawD = require('./rawData');
-var db = require('./db');
+var connection = require('./db');
 
 module.exports = {
 	schools: {
@@ -82,7 +82,6 @@ module.exports = {
 		});
 	}
 };
-
 
 
 

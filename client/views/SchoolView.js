@@ -88,6 +88,7 @@ var SchoolView = Backbone.View.extend({
 	},
 
 	findSchool: function(e) {
+		var context = this;
 		e.preventDefault();
 
 		var school = $('.tt-input').typeahead("val");
@@ -99,7 +100,7 @@ var SchoolView = Backbone.View.extend({
 			var test = item.get("name").trim();
 
 			if (school === test) {
-
+				context.trigger("grabSchool", item);
 			}
 		});
 

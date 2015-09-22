@@ -24,10 +24,17 @@ module.exports = {
 		}
 	},
 	loans: {
-		get: function(req, res) {
-			// models.loans.get(function(err, result) {
-			// 	res.json(result);
-			// });
+		post: function(req, res) {
+			var schoolID = req.body.id;
+
+			db.Allloans.findAll({
+				where: {
+					school: schoolID
+				}
+			})
+			.then(function(results) {
+				res.send(results);
+			});
 		}
 	},
 	states: {

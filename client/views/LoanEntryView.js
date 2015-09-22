@@ -15,9 +15,7 @@ var LoanEntryView = Backbone.View.extend({
 												<td><%= loans_dollar %></td>\
 												<td><%= loans_num %></td>\
 												<td><%= disbursement_dollar %></td>\
-												<td><%= disbursement_num %></td>\
-												<td><%= loans_dollar %></td>\
-												'),
+												<td><%= disbursement_num %></td>'),					
 
 	render: function() {
 		return this.$el.html(this.template(this.model.attributes));
